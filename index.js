@@ -29,12 +29,12 @@ con.connect(function(err) {
             }else{                
                 data = mailer.form_review_message(data, result[element], post_resp[0]);
             }            
-            mailer._send(data, function(output){
-                console.log(output);
-                // console.log("Exxternal=> ",externaldata);
-                var sql2 = "update comments set mail_status=1 where id = '"+result[element].id+"'";
-                con.query(sql2);
-            });
+            // mailer._send(data, function(output){
+            //     console.log(output);
+            //     // console.log("Exxternal=> ",externaldata);
+            //     var sql2 = "update comments set mail_status=1 where id = '"+result[element].id+"'";
+            //     con.query(sql2);
+            // });
             // console.log(data);
         } );
         // console.log(result[element].post_id);

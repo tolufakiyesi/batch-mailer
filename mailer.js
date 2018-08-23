@@ -25,7 +25,7 @@ module.exports = {
             if (error) {
                 console.log(error);
             } else {
-                callback('Email sent: %s | ID: %s | PreviewURL: %s', info.response, info.messageId, nodemailer.getTestMessageUrl(info));
+                callback('Email sent: '+info.response+' | ID: '+info.messageId+' | PreviewURL: '+ nodemailer.getTestMessageUrl(info));
             }
         }); 
     },
