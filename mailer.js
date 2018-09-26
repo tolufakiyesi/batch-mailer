@@ -35,13 +35,13 @@ module.exports = {
         <link rel="stylesheet" href="`+base_url+`assets/new/css/mail.css">
         <b>Hello `+receiver.fullname+`</b></br></br>
             <div class="message unread">
-            <a href="`+base_url+`post/view/`+ receiver.slug+`">
+            <a href="`+base_url+`post/view/`+ sender.slug+`">
                 <p class="last-msg">
                     <i class="fas fa-envelope"></i>
-                    <span><a href="`+base_url+`user/view/`+sender.username+`" style="font-weight: bold;">`+sender.fullname+` (@`+sender.username+`) </a> reviewed your <a href="`+base_url+`post/view/`+ receiver.slug+`" style="font-weight: bold;"> post</a></span>
+                    <span><a href="`+base_url+`user/view/`+sender.username+`" style="font-weight: bold;">`+sender.fullname+` (@`+sender.username+`) </a> reviewed your <a href="`+base_url+`post/view/`+ sender.slug+`" style="font-weight: bold;"> post</a></span>
                 </p>
                 <div class="user">
-                <p class="name"> <a href="`+base_url+`post/view/`+ receiver.slug+`" style="font-weight: bold;">`+receiver.title+`</a></p>
+                <p class="name"> <a href="`+base_url+`post/view/`+ sender.slug+`" style="font-weight: bold;">`+sender.title+`</a></p>
                 <p class="message">`+sender.comment_body+`</p>
                 <p class="time">`+sender.date+`</p>
                 </div>
@@ -55,13 +55,13 @@ module.exports = {
         <link rel="stylesheet" href="`+base_url+`assets/new/css/mail.css">
         <b>Hello `+receiver.fullname+`</b></br></br>
             <div class="message unread">
-            <a href="`+base_url+`post/view/`+ receiver.slug+`">
+            <a href="`+base_url+`post/view/`+ sender.slug+`">
                 <p class="last-msg">
                     <i class="fas fa-envelope"></i>
-                    <span><a href="`+base_url+`user/view/`+sender.username+`" style="font-weight: bold;">`+sender.fullname+` (@`+sender.username+`) </a> commented on your <a href="`+base_url+`post/view/`+ receiver.slug+`" style="font-weight: bold;"> post</a></span>
+                    <span><a href="`+base_url+`user/view/`+sender.username+`" style="font-weight: bold;">`+sender.fullname+` (@`+sender.username+`) </a> commented on your <a href="`+base_url+`post/view/`+ sender.slug+`" style="font-weight: bold;"> post</a></span>
                 </p>
                 <div class="user">
-                <p class="name"> <a href="`+base_url+`post/view/`+ receiver.slug+`" style="font-weight: bold;">`+receiver.title+`</a></p>
+                <p class="name"> <a href="`+base_url+`post/view/`+ sender.slug+`" style="font-weight: bold;">`+sender.title+`</a></p>
                 <p class="message">`+sender.comment_body+`</p>
                 <p class="time">`+sender.date+`</p>
                 </div>
